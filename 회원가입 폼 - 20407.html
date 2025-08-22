@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼 만들기</title>
+</head>
+<body>
+    <form>
+
+        <h3>회원가입 폼</h3>
+        ID <input type = "text" size = "16" maxlength = "10"> 10자 이내로 입력하세요. <br>
+        PW <input type = "password" size = "16">
+
+        <h3>성별 구분</h3>
+        <input type = "radio" name = "ra" value = "1"> 남자 <br>
+        <input type = "radio" name = "ra" value = "2" checked> 여자 <br>
+
+        <h3>취미활동 선택</h3>
+        <input type = "checkbox" name = "ra1" value = "1"> 등산 <br>
+        <input type = "checkbox" name = "ra1" value = "2"> 게임 <br>
+        <input type = "checkbox" name = "ra1" value = "3" checked> 독서
+
+        <h3>한달 독서량</h3>
+        <input type = "number" name = "num" min = "0" max = "10" value = "2">
+
+        <h3>e-mail 입력</h3>
+        <input type = "email" name ="e-mail" placeholder="abc@abc.com" size = "30"><br>
+
+        <h3>생년월일</h3>
+        <input type = "date" name = "birthday"><br>
+
+        <br><br><br>
+
+        <input type = "reset" value = "초기화">
+        <input type = "submit" value = "확인">
+    </form>
+</body>
+</html>
