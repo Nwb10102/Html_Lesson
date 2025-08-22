@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력</title>
+</head>
+<body>
+    <fieldset>
+        <legend> 로그인 폼 </legend>
+        이름 : <input type="text" name="name" size = "15"><br>
+        비밀번호 : <input type="password" name="password" size = "10"><br>
+    </fieldset>
+<hr>
+    <fieldset>
+        <legend>홈페이지 주소 및 이메일 주소</legend>
+            홈페이지 주소 : <input type="url" name="homepage" size="30" placeholder="http://"><br>
+            이메일 주소 : <input type="email" name="email" size="30" placeholder="id@host"><br>
+    </fieldset>
+<hr>
+    <form>
+        숫자 입력 : <input type = "number" name = "number" value = "1"> <br>
+        숫자입력(1~10) : <input type = "number" min = "1" max = "10"> <br>
+        짝수입력 : <input type = "number" step = "2"> <br>
+        range 값 : <input type = "range" min = "1" max = "3"> <br>
+    </form>
+<hr>
+    <form>
+        <h3> 성별 </h3>
+        <input type = "radio" name = "ra1" value ="1"> 남자<br>
+        <input type = "radio" name = "ra1" value ="2"> 여자<br>
+
+        <h3> 학년 </h3>
+        <input type = "radio" name = "ra2" value ="1"> 1학년<br>
+        <input type = "radio" name = "ra2" value ="2"> 2학년<br>
+        <input type = "radio" name = "ra2" value ="3"> 3학년<br>
+
+        <h3> 관심과목 선택 </h3>
+        <input type = "checkbox" name = "ra3" value ="1"> 응프화면구현<br>
+        <input type = "checkbox" name = "ra3" value ="2"> 빅데이터 분석<br>
+        <input type = "checkbox" name = "ra3" value ="3"> 게임기획<br>
+        <input type = "checkbox" name = "ra3" value ="4"> 정보통신
+    </form>
+</body>
+</html>
+
+
+
+
+git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
