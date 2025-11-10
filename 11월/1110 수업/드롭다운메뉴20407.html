@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운</title>
+</head>
+<body>
+    <style>
+        #nav {
+            list-style-type: none;
+            height: 45px;
+            padding: 6px 7px;
+            margin: 0;
+            background: #FFA7A7;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+
+        #nav li {
+            float: left;
+            position: relative;
+            margin: 5px 10px;
+            padding: 0;
+        }
+
+        #nav li a {
+            display: block;
+            color: #D9418C;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0;
+            font-size: 15px;
+        }
+
+        #nav li:hover {
+            background: #FAE0D4;
+            border-radius: 50px;
+            color: #000;
+        }
+
+        #nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            width: 150px;
+
+            background: #FAE0D4;
+            border: 1px dotted #DF3A01;
+            border-radius: 10px;
+        }
+
+        #nav ul li {
+            margin: 0;
+            padding: 0;
+            float: none;
+        }
+
+        #nav ul li:hover a{
+            background: #FA5858;
+            color: #fff;
+            border-radius: 10px;
+        }
+
+        #nav ul {
+            opacity: 0;
+        }
+
+        #nav li:hover ul {
+            opacity: 1;
+        }
+    </style>
+
+    <ol id = "nav">
+        <li> <a href="#"> Menu </a></li>
+
+        <li> <a href="#"> Coffee </a>
+            <ul>
+                <li><a href="#">아메리카노 </a></li>
+                <li><a href="#">카푸치노 </a></li>
+                <li><a href="#">카페라떼 </a></li>
+            </ul>
+        </li>
+
+        <li> <a href="#"> Ade-juice </a>
+            <ul>
+                <li><a href="#">청포도에이드 </a></li>
+                <li><a href="#">자몽에이드 </a></li>
+                <li><a href="#">오렌지에이드 </a></li>
+            </ul>
+        </li>
+
+        <li> <a href="#"> Tea </a>
+            <ul>
+                <li><a href="#">허니블랙티 </a></li>
+                <li><a href="#">자몽티 </a></li>
+                <li><a href="#">얼그레이 </a></li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
