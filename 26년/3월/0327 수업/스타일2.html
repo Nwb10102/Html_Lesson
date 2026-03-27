@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    ul {
+        padding: 0;
+    }
+
+    ul li {
+        list-style: none;
+        padding: 8px 16px;
+        border-top: 1px solid lightgray;
+    }
+
+    ul li:first-child {
+        border-top: 2px solid black;
+    }
+
+    ul li:last-child {
+        border-bottom: 2px solid black;
+    }
+
+
+    ul li:nth-child(3) {
+        color: purple;
+    }
+
+    ul li:nth-child(even) {
+        background-color: #eee;
+    }
+
+    ul li:nth-child(3n+1) {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <ul>
+        <li>첫번째 글</li>
+        <li>두번째 글</li>
+        <li>세번째 글</li>
+        <li>네번째 글</li>
+        <li>다섯번째 글</li>
+        <li>여섯번째 글</li>
+        <li>일곱번째 글</li>
+        <li>여덟번째 글</li>
+    </ul>
+</body>
+</html>

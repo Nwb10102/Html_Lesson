@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .blue {
+        color: blue;
+    }
+    
+    .underline {
+        text-decoration: underline;
+    }
+
+
+    .underline:not(.blue) {
+        color: red;
+    }
+
+    .underline:not(.blue):not(li) {
+        color: inherit;
+    }
+</style>
+
+    <h1 class="underline">
+         부정 가상 클래스 사용예
+    </h1>
+    <ul>
+        <li>특성 없음</li>
+        <li class="blue">파랑 글씨</li>
+        <li class="blue underline">파랑 글씨에 밑줄</li>
+        <li class="underline">파랑 글씨는 아닌게 밑줄</li>
+    </ul>
+</body>
+</html>
