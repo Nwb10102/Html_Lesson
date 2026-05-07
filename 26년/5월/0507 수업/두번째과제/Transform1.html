@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+</head>
+
+<style>
+    .container {
+        width: 800px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    .origin {
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 40px
+    }
+
+    .origin > div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+
+    #move_right:hover {
+        transform:translateX(50px);
+    }
+
+    #move_bottom:hover {
+        transform:translateY(20px);
+    }
+
+    #move_bottom_right:hover {
+        transform:translate(10px, 20px);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="origin">
+            <div id="move_right"></div>
+        </div>
+
+        <div class="origin">
+            <div id="move_bottom"></div>
+        </div>
+
+        <div class="origin">
+            <div id="move_bottom_right"></div>
+        </div>
+    </div>
+</body>
+</html>
